@@ -1,39 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <title>Projects & Case Studies | Khandakar Muttakin Uzzaman Tonmoy</title>
 
-<meta name="description" content="Selected enterprise cybersecurity and technology case studies across government and BFSI environments, demonstrating risk-aware delivery and stakeholder coordination.">
+<meta name="description" content="Selected enterprise cybersecurity and technology case studies across government and BFSI environments.">
+<meta name="author" content="Khandakar Muttakin Uzzaman Tonmoy">
 
 <style>
 :root {
-  --bg-light: #f8fafc;
   --bg-dark: #0b1c2d;
+  --bg-light: #f8fafc;
+  --primary: #64ffda;
   --text-dark: #1f2933;
-  --text-muted: #475569;
-  --accent: #64ffda;
+  --text-light: #e5e7eb;
   --border: #e5e7eb;
+  --card-bg: #ffffff;
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
 }
 
 body {
-  margin: 0;
   background: var(--bg-light);
   color: var(--text-dark);
-  line-height: 1.7;
-}
-
-.header {
-  background: linear-gradient(135deg, #0b1c2d, #102a43);
-  color: #e5e7eb;
-  padding: 80px 20px;
+  line-height: 1.65;
 }
 
 .container {
@@ -41,205 +38,268 @@ body {
   margin: auto;
 }
 
-.header h1 {
+/* ---------- HERO ---------- */
+.hero {
+  background: linear-gradient(135deg, #0b1c2d, #102a43);
+  color: var(--text-light);
+  padding: 100px 20px 90px;
+}
+
+.hero h1 {
   font-size: 2.4rem;
   margin-bottom: 12px;
 }
 
-.header p {
-  max-width: 760px;
+.hero p {
+  font-size: 1.1rem;
   color: #9ff3dd;
+  max-width: 780px;
 }
 
+/* ---------- NAV ---------- */
+.nav {
+  margin-top: 30px;
+}
+
+.nav a {
+  margin-right: 28px;
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+.nav a:hover {
+  opacity: 1;
+}
+
+.nav a.active {
+  opacity: 1;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 4px;
+}
+
+/* ---------- SECTIONS ---------- */
 section {
-  padding: 70px 20px;
+  padding: 90px 20px;
 }
 
-.case {
-  background: #ffffff;
+section h2 {
+  font-size: 1.9rem;
+  margin-bottom: 22px;
+}
+
+/* ---------- CASE CARD ---------- */
+.case-card {
+  background: var(--card-bg);
   border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 40px;
+  border-radius: 12px;
+  padding: 36px;
   margin-bottom: 50px;
 }
 
-.case h2 {
-  font-size: 1.6rem;
-  margin-bottom: 10px;
+.case-title {
+  font-size: 1.4rem;
+  margin-bottom: 6px;
 }
 
-.case .meta {
+.case-meta {
   font-size: 0.95rem;
-  color: var(--text-muted);
-  margin-bottom: 20px;
+  color: #475569;
+  margin-bottom: 22px;
 }
 
-.case h3 {
-  margin-top: 25px;
-  font-size: 1.1rem;
+.case-section {
+  margin-bottom: 18px;
 }
 
-.case p {
-  color: var(--text-muted);
+.case-section strong {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
 }
 
-ul {
-  margin-top: 10px;
+.case-section p,
+.case-section li {
+  color: #334e68;
 }
 
-li {
-  margin-bottom: 8px;
-  color: var(--text-muted);
+.case-section ul {
+  padding-left: 18px;
 }
 
 .skills {
-  margin-top: 15px;
+  margin-top: 12px;
   font-size: 0.95rem;
   color: #334e68;
 }
 
+/* ---------- CTA ---------- */
+.cta {
+  text-align: center;
+}
+
+/* ---------- FOOTER ---------- */
 footer {
   background: var(--bg-dark);
-  color: #e5e7eb;
+  color: var(--text-light);
   text-align: center;
-  padding: 24px;
+  padding: 26px;
   font-size: 0.9rem;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
 }
 </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
-<div class="header">
+<!-- HERO -->
+<header class="hero">
   <div class="container">
     <h1>Projects & Case Studies</h1>
     <p>
       Selected enterprise engagements demonstrating risk-aware decision making,
-      procurement alignment, and delivery continuity in regulated environments.
+      stakeholder coordination, and delivery continuity in regulated environments.
     </p>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="resume.html">Resume</a>
+    </nav>
   </div>
-</div>
+</header>
 
 <section>
   <div class="container">
 
     <!-- CASE 1 -->
-    <div class="case">
-      <h2>HSM Implementation for Government-Owned Commercial Bank</h2>
-      <div class="meta">Industry: Government / BFSI · Scope: Cryptographic Security (HSM)</div>
+    <div class="case-card">
+      <div class="case-title">HSM Implementation for Government-Owned Commercial Bank</div>
+      <div class="case-meta">Industry: Government / BFSI · Focus: Cryptographic Security</div>
 
-      <h3>Context</h3>
-      <p>
-        A government-owned commercial bank required the procurement and implementation
-        of Hardware Security Modules (HSM) to strengthen cryptographic controls and meet
-        regulatory and operational security requirements under formal public procurement.
-      </p>
+      <div class="case-section">
+        <strong>Context</strong>
+        <p>
+          A government-owned commercial bank required secure cryptographic infrastructure
+          to meet regulatory, operational, and compliance requirements under formal
+          public procurement frameworks.
+        </p>
+      </div>
 
-      <h3>Challenge</h3>
-      <p>
-        The engagement required strict compliance with e-GP procurement processes,
-        coordination across multiple stakeholders, and alignment between technical
-        validation, UAT, and acceptance documentation.
-      </p>
+      <div class="case-section">
+        <strong>My Role</strong>
+        <p>
+          Acted as a coordination point between client stakeholders, vendors,
+          and internal technical teams, supporting proposal submission, UAT,
+          commissioning, and delivery documentation.
+        </p>
+      </div>
 
-      <h3>My Role</h3>
-      <ul>
-        <li>Coordinated between client stakeholders, vendors, and internal technical teams</li>
-        <li>Supported proposal submission and procurement formalities</li>
-        <li>Assisted in UAT, commissioning, and delivery documentation</li>
-        <li>Maintained engagement continuity through billing and closure stages</li>
-      </ul>
-
-      <h3>Outcome</h3>
-      <ul>
-        <li>Enabled compliant procurement approval</li>
-        <li>Supported secure cryptographic operations</li>
-        <li>Reduced execution risk in a regulated environment</li>
-      </ul>
+      <div class="case-section">
+        <strong>Outcome</strong>
+        <ul>
+          <li>Enabled compliant procurement and approval</li>
+          <li>Supported secure cryptographic operations</li>
+          <li>Reduced execution risk in a regulated environment</li>
+        </ul>
+      </div>
 
       <div class="skills">
         <strong>Skills demonstrated:</strong> Stakeholder coordination, procurement alignment,
-        risk framing, delivery continuity, technical–commercial communication
+        risk framing, delivery continuity
       </div>
     </div>
 
     <!-- CASE 2 -->
-    <div class="case">
-      <h2>Anti-DDoS Solution Procurement for Leading Commercial Bank</h2>
-      <div class="meta">Industry: BFSI · Scope: Network & Availability Security</div>
+    <div class="case-card">
+      <div class="case-title">Anti-DDoS Solution Procurement for Leading Commercial Bank</div>
+      <div class="case-meta">Industry: BFSI · Focus: Availability & Network Security</div>
 
-      <h3>Context</h3>
-      <p>
-        A leading commercial bank sought an Anti-DDoS solution to protect
-        digital banking services from availability and disruption risks
-        while maintaining compliance with banking security standards.
-      </p>
+      <div class="case-section">
+        <strong>Context</strong>
+        <p>
+          A leading commercial bank sought to strengthen protection against
+          service disruption risks affecting digital banking platforms.
+        </p>
+      </div>
 
-      <h3>Challenge</h3>
-      <p>
-        The solution needed to balance security effectiveness, operational feasibility,
-        and vendor capability within formal procurement and approval constraints.
-      </p>
+      <div class="case-section">
+        <strong>My Role</strong>
+        <p>
+          Supported solution positioning and proposal coordination, translating
+          technical security considerations into operational and business impact.
+        </p>
+      </div>
 
-      <h3>My Role</h3>
-      <ul>
-        <li>Supported proposal preparation and solution positioning</li>
-        <li>Coordinated communication between client, technical, and procurement teams</li>
-        <li>Translated technical risk into business and operational considerations</li>
-      </ul>
-
-      <h3>Outcome</h3>
-      <ul>
-        <li>Reduced exposure to service availability risks</li>
-        <li>Improved clarity for stakeholder decision-making</li>
-        <li>Supported compliant procurement progression</li>
-      </ul>
+      <div class="case-section">
+        <strong>Outcome</strong>
+        <ul>
+          <li>Reduced exposure to availability-related risks</li>
+          <li>Improved stakeholder clarity for procurement decisions</li>
+        </ul>
+      </div>
 
       <div class="skills">
         <strong>Skills demonstrated:</strong> Risk translation, solution positioning,
-        stakeholder communication, procurement support
+        stakeholder communication
       </div>
     </div>
 
     <!-- CASE 3 -->
-    <div class="case">
-      <h2>Data Center & Disaster Recovery Infrastructure AMC</h2>
-      <div class="meta">Industry: BFSI / Enterprise · Scope: DC & DR Operations</div>
+    <div class="case-card">
+      <div class="case-title">Data Center & Disaster Recovery Infrastructure AMC</div>
+      <div class="case-meta">Industry: BFSI / Enterprise · Focus: Operational Continuity</div>
 
-      <h3>Context</h3>
-      <p>
-        Engagements supporting Annual Maintenance Contracts (AMC) for data center
-        passive infrastructure and disaster recovery environments, with high
-        uptime and continuity expectations.
-      </p>
+      <div class="case-section">
+        <strong>Context</strong>
+        <p>
+          Ongoing engagements supporting annual maintenance contracts
+          for data center and disaster recovery environments with strict
+          uptime and continuity expectations.
+        </p>
+      </div>
 
-      <h3>Challenge</h3>
-      <p>
-        Ensuring service continuity, documentation accuracy, and accountability
-        across extended maintenance periods in business-critical environments.
-      </p>
+      <div class="case-section">
+        <strong>My Role</strong>
+        <p>
+          Supported procurement coordination, client communication,
+          documentation accuracy, and SLA alignment across maintenance periods.
+        </p>
+      </div>
 
-      <h3>My Role</h3>
-      <ul>
-        <li>Supported procurement and coordination of AMC services</li>
-        <li>Acted as a client-facing coordination point</li>
-        <li>Tracked service delivery, documentation, and SLA alignment</li>
-      </ul>
-
-      <h3>Outcome</h3>
-      <ul>
-        <li>Maintained high service uptime targets</li>
-        <li>Improved operational clarity and accountability</li>
-        <li>Supported leadership confidence in continuity planning</li>
-      </ul>
+      <div class="case-section">
+        <strong>Outcome</strong>
+        <ul>
+          <li>Maintained high service uptime and accountability</li>
+          <li>Improved operational clarity for leadership teams</li>
+        </ul>
+      </div>
 
       <div class="skills">
-        <strong>Skills demonstrated:</strong> Operational coordination, service continuity,
-        documentation discipline, vendor management
+        <strong>Skills demonstrated:</strong> Operational coordination,
+        service continuity, documentation discipline
       </div>
     </div>
 
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <h2>Professional Background</h2>
+    <p>
+      For a complete view of my experience, responsibilities,
+      and professional background, please refer to my resume.
+    </p>
+    <a href="resume.html" class="btn">View Resume</a>
   </div>
 </section>
 
@@ -249,4 +309,3 @@ footer {
 
 </body>
 </html>
-
