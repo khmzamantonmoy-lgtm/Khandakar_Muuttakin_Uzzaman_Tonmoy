@@ -145,6 +145,27 @@ footer {
     font-size: 2rem;
   }
 }
+  .nav {
+  margin-top: 30px;
+}
+
+.nav a {
+  margin-right: 28px;
+  color: #e5e7eb;
+  text-decoration: none;
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+.nav a:hover {
+  opacity: 1;
+}
+.nav a.active {
+  opacity: 1;
+  border-bottom: 2px solid #64ffda;
+  padding-bottom: 4px;
+}
+
 </style>
 </head>
 
@@ -155,6 +176,13 @@ footer {
   <div class="container">
     <h1>Khandakar Muttakin Uzzaman Tonmoy</h1>
     <p>Enterprise Cybersecurity • Cloud & Data Center • Technology Consulting</p>
+    
+<nav class="nav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="resume.html" class="active">Resume</a>
+</nav>
 
     <div class="nav">
       <a href="#about">About</a>
