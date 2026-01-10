@@ -1,243 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khandakar Muttakin Uzzaman Tonmoy | Enterprise Cybersecurity</title>
 
-<title>Khandakar Muttakin Uzzaman Tonmoy | Enterprise Cybersecurity & Technology Professional</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<meta name="description" content="Enterprise cybersecurity and technology professional with experience across government, BFSI, and large-scale enterprise environments.">
-<meta name="author" content="Khandakar Muttakin Uzzaman Tonmoy">
+  <style>
+    :root {
+      --bg-main: #020617;
+      --bg-secondary: #020617;
+      --card-bg: #020617;
+      --accent: #38bdf8;
+      --text-main: #e5e7eb;
+      --text-muted: #94a3b8;
+    }
 
-<style>
-:root {
-  --bg-dark: #0b1c2d;
-  --bg-light: #f8fafc;
-  --primary: #64ffda;
-  --text-dark: #1f2933;
-  --text-muted: #334e68;
-  --text-light: #e5e7eb;
-  --border: #e5e7eb;
-  --card-bg: #ffffff;
-}
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #020617, #000000);
+      color: var(--text-main);
+      line-height: 1.7;
+    }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-}
+    section {
+      padding: 6rem 0;
+    }
 
-body {
-  background: var(--bg-light);
-  color: var(--text-dark);
-  line-height: 1.65;
-}
+    h1, h2, h3, h4, h5 {
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
 
-.container {
-  max-width: 1080px;
-  margin: auto;
-}
+    .navbar {
+      background: rgba(2, 6, 23, 0.85);
+      backdrop-filter: blur(10px);
+    }
 
-/* ================= HERO ================= */
-.hero {
-  background: linear-gradient(135deg, #0b1c2d, #102a43);
-  color: var(--text-light);
-  padding: 110px 20px 95px;
-}
+    .nav-link {
+      color: var(--text-muted) !important;
+      font-weight: 500;
+    }
 
-.hero h1 {
-  font-size: 2.7rem;
-  margin-bottom: 14px;
-  letter-spacing: -0.02em;
-}
+    .nav-link:hover {
+      color: var(--accent) !important;
+    }
 
-.hero p {
-  font-size: 1.15rem;
-  color: #9ff3dd;
-  max-width: 720px;
-  margin-top: 10px;
-}
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+    }
 
-/* ================= NAV ================= */
-.nav {
-  margin-top: 36px;
-}
+    .text-accent {
+      color: var(--accent);
+    }
 
-.nav a {
-  margin-right: 30px;
-  color: var(--text-light);
-  text-decoration: none;
-  font-weight: 500;
-  opacity: 0.85;
-}
+    .btn-accent {
+      background: var(--accent);
+      color: #020617;
+      font-weight: 500;
+      padding: 12px 28px;
+      border-radius: 12px;
+      border: none;
+    }
 
-.nav a:hover {
-  opacity: 1;
-}
+    .btn-accent:hover {
+      background: #0ea5e9;
+      color: #020617;
+    }
 
-.nav a.active {
-  opacity: 1;
-  border-bottom: 2px solid var(--primary);
-  padding-bottom: 4px;
-}
+    .card-exec {
+      background: linear-gradient(180deg, #020617, #020617);
+      border: 1px solid rgba(148, 163, 184, 0.1);
+      border-radius: 18px;
+      padding: 2.5rem;
+      height: 100%;
+      transition: all 0.35s ease;
+    }
 
-/* ================= SECTIONS ================= */
-section {
-  padding: 90px 20px;
-}
+    .card-exec:hover {
+      transform: translateY(-10px);
+      border-color: rgba(56, 189, 248, 0.5);
+    }
 
-section:not(:first-of-type) {
-  border-top: 1px solid var(--border);
-}
+    .muted {
+      color: var(--text-muted);
+    }
 
-section h2 {
-  font-size: 1.95rem;
-  margin-bottom: 22px;
-}
-
-section p {
-  max-width: 850px;
-  color: var(--text-muted);
-}
-
-/* ================= BUTTON ================= */
-.btn {
-  display: inline-block;
-  margin-top: 26px;
-  padding: 13px 34px;
-  background: var(--primary);
-  color: #0b1c2d;
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 6px;
-}
-
-/* ================= EXPERTISE ================= */
-.expertise-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 26px;
-  margin-top: 42px;
-}
-
-.expertise-card {
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  padding: 28px;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
-  font-weight: 500;
-}
-
-/* ================= FOOTER ================= */
-footer {
-  background: var(--bg-dark);
-  color: var(--text-light);
-  text-align: center;
-  padding: 26px;
-  font-size: 0.9rem;
-}
-
-/* ================= RESPONSIVE ================= */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.1rem;
-  }
-}
-</style>
+    footer {
+      padding: 3rem 0;
+      border-top: 1px solid rgba(148, 163, 184, 0.1);
+      color: var(--text-muted);
+    }
+  </style>
 </head>
-
 <body>
 
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand text-white fw-semibold" href="#">KMU Tonmoy</a>
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto gap-3">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 <!-- HERO -->
-<header class="hero">
+<section id="home" class="hero">
   <div class="container">
-    <h1>Khandakar Muttakin Uzzaman Tonmoy</h1>
-    <p>
-      Enterprise Cybersecurity & Technology Professional working across
-      government, BFSI, and large-scale enterprise environments — with a
-      management-oriented trajectory.
+    <h1 class="display-5">Khandakar Muttakin Uzzaman Tonmoy</h1>
+    <p class="text-accent mt-3 fs-5">Enterprise Cybersecurity & Technology Professional</p>
+    <p class="muted mt-4 col-lg-8">
+      Working across government, BFSI, and large-scale enterprise environments with a risk-aware,
+      management-oriented execution trajectory.
     </p>
-
-    <nav class="nav">
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="resume.html">Resume</a>
-    </nav>
-  </div>
-</header>
-
-<!-- FOCUS -->
-<section>
-  <div class="container">
-    <h2>Professional Focus</h2>
-    <p>
-      I work at the intersection of cybersecurity, enterprise technology,
-      and business execution. My experience spans regulated environments
-      where security, compliance, procurement, and operational continuity
-      must align to support long-term organizational outcomes.
-    </p>
-
-    <a href="about.html" class="btn">Read Full Profile</a>
-  </div>
-</section>
-
-<!-- EXPERTISE -->
-<section>
-  <div class="container">
-    <h2>Core Areas of Expertise</h2>
-
-    <div class="expertise-grid">
-      <div class="expertise-card">Enterprise Cybersecurity & Risk Management</div>
-      <div class="expertise-card">Cloud & Data Center Environments</div>
-      <div class="expertise-card">Network, Infrastructure & Availability Security</div>
-      <div class="expertise-card">Government & BFSI Procurement Contexts</div>
-      <div class="expertise-card">Technical–Commercial Coordination</div>
-      <div class="expertise-card">Enterprise Solution Positioning</div>
+    <div class="mt-4 d-flex gap-3">
+      <a href="#resume" class="btn btn-accent">View Resume</a>
+      <a href="#projects" class="btn btn-outline-light">Case Studies</a>
     </div>
   </div>
 </section>
 
-<!-- CASE STUDIES -->
-<section>
+<!-- ABOUT -->
+<section id="about">
   <div class="container">
-    <h2>Selected Case Studies</h2>
-    <p>
-      A focused selection of enterprise engagements demonstrating
-      risk-aware decision making, stakeholder coordination, and
-      delivery continuity across complex environments.
+    <h2 class="mb-4">Executive Summary</h2>
+    <p class="muted col-lg-9">
+      Technology professional with ~7 years of experience spanning enterprise cybersecurity,
+      regulated infrastructure, government procurement, and BFSI environments.
+      Known for translating technical risk into structured business decisions.
     </p>
 
-    <a href="projects.html" class="btn">View Case Studies</a>
+    <div class="row mt-5 g-4">
+      <div class="col-md-6">
+        <div class="card-exec">
+          <h5>Domain Exposure</h5>
+          <ul class="mt-3 muted">
+            <li>Enterprise cybersecurity & risk governance</li>
+            <li>Government & BFSI procurement frameworks</li>
+            <li>Cloud, data center & availability infrastructure</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card-exec">
+          <h5>How I Work</h5>
+          <ul class="mt-3 muted">
+            <li>Risk-first, long-term thinking</li>
+            <li>Clear stakeholder communication</li>
+            <li>Structured execution under ambiguity</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <h2 class="mb-5">Selected Case Studies</h2>
+
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card-exec">
+          <h5>HSM Implementation – Government Bank</h5>
+          <p class="muted">Cryptographic Security / BFSI</p>
+          <ul class="mt-3 muted">
+            <li>Regulatory-compliant procurement</li>
+            <li>Stakeholder & vendor coordination</li>
+            <li>Reduced execution risk</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card-exec">
+          <h5>Anti-DDoS Solution – Commercial Bank</h5>
+          <p class="muted">Availability & Network Security</p>
+          <ul class="mt-3 muted">
+            <li>Risk-to-business translation</li>
+            <li>Improved procurement clarity</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESUME -->
+<section id="resume">
+  <div class="container">
+    <h2 class="mb-4">Professional Background</h2>
+    <div class="card-exec">
+      <h5>Business Manager – Cybersecurity & Enterprise Solutions</h5>
+      <p class="muted">Infosonik Systems Ltd · 2024 – Present</p>
+      <ul class="muted">
+        <li>Lead enterprise cybersecurity engagements</li>
+        <li>Support government & BFSI tenders</li>
+        <li>Align risk, compliance, and execution</li>
+      </ul>
+    </div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section>
+<section id="contact">
   <div class="container">
-    <h2>Get in Touch</h2>
-    <p>
-      For professional discussions, collaboration, or relevant opportunities,
-      the best starting point is my resume or LinkedIn profile.
-    </p>
-
-    <p style="margin-top:16px;">
-      You may also reach me directly at:
-      <br>
-      <a href="mailto:khmzaman26@gmail.com" style="color:#0b1c2d; font-weight:600;">
-        khmzaman26@gmail.com
-      </a>
-    </p>
-
-    <a href="resume.html" class="btn">View Resume</a>
+    <h2 class="mb-4">Get in Touch</h2>
+    <p class="muted">For professional discussions and collaboration</p>
+    <p class="text-accent">khmzaman26@gmail.com</p>
   </div>
 </section>
 
-<footer>
+<footer class="text-center">
   © 2026 Khandakar Muttakin Uzzaman Tonmoy
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
