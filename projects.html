@@ -1,311 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Enterprise Case Studies</title>
 
-<title>Projects & Case Studies | Khandakar Muttakin Uzzaman Tonmoy</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<meta name="description" content="Selected enterprise cybersecurity and technology case studies across government and BFSI environments.">
-<meta name="author" content="Khandakar Muttakin Uzzaman Tonmoy">
+  <style>
+    :root {
+      --bg-main: #020617;
+      --accent: #38bdf8;
+      --text-main: #e5e7eb;
+      --text-muted: #94a3b8;
+    }
 
-<style>
-:root {
-  --bg-dark: #0b1c2d;
-  --bg-light: #f8fafc;
-  --primary: #64ffda;
-  --text-dark: #1f2933;
-  --text-light: #e5e7eb;
-  --border: #e5e7eb;
-  --card-bg: #ffffff;
-}
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #020617, #000000);
+      color: var(--text-main);
+      line-height: 1.8;
+    }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-}
+    section { padding: 6rem 0; }
 
-body {
-  background: var(--bg-light);
-  color: var(--text-dark);
-  line-height: 1.65;
-}
+    h1, h2, h3, h4, h5 {
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
 
-.container {
-  max-width: 1000px;
-  margin: auto;
-}
+    .text-accent { color: var(--accent); }
+    .muted { color: var(--text-muted); }
 
-/* ---------- HERO ---------- */
-.hero {
-  background: linear-gradient(135deg, #0b1c2d, #102a43);
-  color: var(--text-light);
-  padding: 100px 20px 90px;
-}
+    .card-exec {
+      background: #020617;
+      border: 1px solid rgba(148, 163, 184, 0.12);
+      border-radius: 18px;
+      padding: 2.5rem;
+      height: 100%;
+    }
 
-.hero h1 {
-  font-size: 2.4rem;
-  margin-bottom: 12px;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  color: #9ff3dd;
-  max-width: 780px;
-}
-
-/* ---------- NAV ---------- */
-.nav {
-  margin-top: 30px;
-}
-
-.nav a {
-  margin-right: 28px;
-  color: var(--text-light);
-  text-decoration: none;
-  font-weight: 500;
-  opacity: 0.85;
-}
-
-.nav a:hover {
-  opacity: 1;
-}
-
-.nav a.active {
-  opacity: 1;
-  border-bottom: 2px solid var(--primary);
-  padding-bottom: 4px;
-}
-
-/* ---------- SECTIONS ---------- */
-section {
-  padding: 90px 20px;
-}
-
-section h2 {
-  font-size: 1.9rem;
-  margin-bottom: 22px;
-}
-
-/* ---------- CASE CARD ---------- */
-.case-card {
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 36px;
-  margin-bottom: 50px;
-}
-
-.case-title {
-  font-size: 1.4rem;
-  margin-bottom: 6px;
-}
-
-.case-meta {
-  font-size: 0.95rem;
-  color: #475569;
-  margin-bottom: 22px;
-}
-
-.case-section {
-  margin-bottom: 18px;
-}
-
-.case-section strong {
-  display: block;
-  margin-bottom: 6px;
-  font-weight: 600;
-}
-
-.case-section p,
-.case-section li {
-  color: #334e68;
-}
-
-.case-section ul {
-  padding-left: 18px;
-}
-
-.skills {
-  margin-top: 12px;
-  font-size: 0.95rem;
-  color: #334e68;
-}
-
-/* ---------- CTA ---------- */
-.cta {
-  text-align: center;
-}
-
-/* ---------- FOOTER ---------- */
-footer {
-  background: var(--bg-dark);
-  color: var(--text-light);
-  text-align: center;
-  padding: 26px;
-  font-size: 0.9rem;
-}
-
-/* ---------- RESPONSIVE ---------- */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
-}
-</style>
+    footer {
+      padding: 3rem 0;
+      border-top: 1px solid rgba(148, 163, 184, 0.1);
+      color: var(--text-muted);
+    }
+  </style>
 </head>
-
 <body>
-
-<!-- HERO -->
-<header class="hero">
-  <div class="container">
-    <h1>Projects & Case Studies</h1>
-    <p>
-      Selected enterprise engagements demonstrating risk-aware decision making,
-      stakeholder coordination, and delivery continuity in regulated environments.
-    </p>
-
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html" class="active">Projects</a>
-      <a href="resume.html">Resume</a>
-    </nav>
-  </div>
-</header>
 
 <section>
   <div class="container">
+    <span class="badge rounded-pill bg-info text-dark mb-4">Enterprise & Regulated Environments</span>
+
+    <h1 class="mb-4">Enterprise Case Studies</h1>
+
+    <p class="muted col-lg-10">
+      This page highlights selected professional engagements from regulated and enterprise
+      environments. These examples focus on <strong>decision support</strong>, <strong>risk-aware execution</strong>,
+      and <strong>structured delivery</strong> rather than experimental or startup-style projects.
+      All engagements were executed within formal governance, procurement, and compliance frameworks.
+    </p>
 
     <!-- CASE 1 -->
-    <div class="case-card">
-      <div class="case-title">HSM Implementation for Government-Owned Commercial Bank</div>
-      <div class="case-meta">Industry: Government / BFSI · Focus: Cryptographic Security</div>
+    <div class="card-exec mt-5">
+      <h4>HSM Implementation – Government-Owned Bank</h4>
+      <p class="muted">Public Sector / BFSI · Cryptographic Security</p>
 
-      <div class="case-section">
-        <strong>Context</strong>
-        <p>
-          A government-owned commercial bank required secure cryptographic infrastructure
-          to meet regulatory, operational, and compliance requirements under formal
-          public procurement frameworks.
-        </p>
-      </div>
+      <h6 class="mt-4">Context</h6>
+      <p class="muted">
+        A government-owned financial institution required the implementation of a Hardware Security Module (HSM)
+        to meet regulatory cryptographic requirements and improve key management assurance.
+      </p>
 
-      <div class="case-section">
-        <strong>My Role</strong>
-        <p>
-          Acted as a coordination point between client stakeholders, vendors,
-          and internal technical teams, supporting proposal submission, UAT,
-          commissioning, and delivery documentation.
-        </p>
-      </div>
+      <h6 class="mt-3">My Role</h6>
+      <ul class="muted">
+        <li>Supported requirement analysis and solution alignment with regulatory expectations</li>
+        <li>Coordinated between vendor teams, client stakeholders, and internal delivery units</li>
+        <li>Ensured documentation accuracy for approval and audit readiness</li>
+      </ul>
 
-      <div class="case-section">
-        <strong>Outcome</strong>
-        <ul>
-          <li>Enabled compliant procurement and approval</li>
-          <li>Supported secure cryptographic operations</li>
-          <li>Reduced execution risk in a regulated environment</li>
-        </ul>
-      </div>
-
-      <div class="skills">
-        <strong>Skills demonstrated:</strong> Stakeholder coordination, procurement alignment,
-        risk framing, delivery continuity
-      </div>
+      <h6 class="mt-3">Outcome</h6>
+      <ul class="muted">
+        <li>Improved cryptographic governance and compliance posture</li>
+        <li>Reduced implementation risk through structured coordination</li>
+        <li>Enabled predictable delivery within a regulated environment</li>
+      </ul>
     </div>
 
     <!-- CASE 2 -->
-    <div class="case-card">
-      <div class="case-title">Anti-DDoS Solution Procurement for Leading Commercial Bank</div>
-      <div class="case-meta">Industry: BFSI · Focus: Availability & Network Security</div>
+    <div class="card-exec mt-5">
+      <h4>Anti-DDoS Solution Evaluation – Tier-1 Commercial Bank</h4>
+      <p class="muted">Financial Services · Availability & Network Security</p>
 
-      <div class="case-section">
-        <strong>Context</strong>
-        <p>
-          A leading commercial bank sought to strengthen protection against
-          service disruption risks affecting digital banking platforms.
-        </p>
-      </div>
+      <h6 class="mt-4">Context</h6>
+      <p class="muted">
+        A large commercial bank required enhanced protection against volumetric and application-layer
+        denial-of-service attacks to ensure service continuity and regulatory uptime expectations.
+      </p>
 
-      <div class="case-section">
-        <strong>My Role</strong>
-        <p>
-          Supported solution positioning and proposal coordination, translating
-          technical security considerations into operational and business impact.
-        </p>
-      </div>
+      <h6 class="mt-3">My Role</h6>
+      <ul class="muted">
+        <li>Translated technical DDoS risks into operational and business impact language</li>
+        <li>Supported solution comparison and procurement documentation</li>
+        <li>Facilitated stakeholder understanding across technical and non-technical teams</li>
+      </ul>
 
-      <div class="case-section">
-        <strong>Outcome</strong>
-        <ul>
-          <li>Reduced exposure to availability-related risks</li>
-          <li>Improved stakeholder clarity for procurement decisions</li>
-        </ul>
-      </div>
-
-      <div class="skills">
-        <strong>Skills demonstrated:</strong> Risk translation, solution positioning,
-        stakeholder communication
-      </div>
+      <h6 class="mt-3">Outcome</h6>
+      <ul class="muted">
+        <li>Improved decision clarity for senior stakeholders</li>
+        <li>Strengthened service availability planning</li>
+        <li>Aligned security controls with long-term operational continuity</li>
+      </ul>
     </div>
 
     <!-- CASE 3 -->
-    <div class="case-card">
-      <div class="case-title">Data Center & Disaster Recovery Infrastructure AMC</div>
-      <div class="case-meta">Industry: BFSI / Enterprise · Focus: Operational Continuity</div>
+    <div class="card-exec mt-5">
+      <h4>Enterprise Security & Infrastructure Support – Multiple Clients</h4>
+      <p class="muted">Enterprise IT · Ongoing Engagements</p>
 
-      <div class="case-section">
-        <strong>Context</strong>
-        <p>
-          Ongoing engagements supporting annual maintenance contracts
-          for data center and disaster recovery environments with strict
-          uptime and continuity expectations.
-        </p>
-      </div>
+      <h6 class="mt-4">Context</h6>
+      <p class="muted">
+        Ongoing support across enterprise clients requiring structured assistance in cybersecurity,
+        infrastructure planning, and vendor coordination within formal operating environments.
+      </p>
 
-      <div class="case-section">
-        <strong>My Role</strong>
-        <p>
-          Supported procurement coordination, client communication,
-          documentation accuracy, and SLA alignment across maintenance periods.
-        </p>
-      </div>
+      <h6 class="mt-3">Contribution Areas</h6>
+      <ul class="muted">
+        <li>Risk-aware infrastructure and security discussions</li>
+        <li>Procurement and bid documentation support</li>
+        <li>Review of NDAs, SLAs, and technical-commercial agreements</li>
+        <li>Coordination across distributed technical and business teams</li>
+      </ul>
 
-      <div class="case-section">
-        <strong>Outcome</strong>
-        <ul>
-          <li>Maintained high service uptime and accountability</li>
-          <li>Improved operational clarity for leadership teams</li>
-        </ul>
-      </div>
-
-      <div class="skills">
-        <strong>Skills demonstrated:</strong> Operational coordination,
-        service continuity, documentation discipline
-      </div>
+      <h6 class="mt-3">Value Delivered</h6>
+      <ul class="muted">
+        <li>Consistent documentation quality</li>
+        <li>Reduced ambiguity in vendor and stakeholder communication</li>
+        <li>Improved delivery predictability</li>
+      </ul>
     </div>
 
   </div>
 </section>
 
-<section class="cta">
-  <div class="container">
-    <h2>Professional Background</h2>
-    <p>
-      For a complete view of my experience, responsibilities,
-      and professional background, please refer to my resume.
-    </p>
-    <a href="resume.html" class="btn">View Resume</a>
-  </div>
-</section>
-
-<footer>
+<footer class="text-center">
   © 2026 Khandakar Muttakin Uzzaman Tonmoy
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
